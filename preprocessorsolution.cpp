@@ -1,4 +1,10 @@
-/* Enter your macros here */
+#define INF 1000000          // Large value for min/max initialization
+#define io(x) cin >> x       // To read input
+#define foreach(v, i) for(int i = 0; i < v.size(); i++)  // Loop over vector
+#define toStr(x) #x          // Convert literal to string
+
+#define FUNCTION(name, op) \
+void name(int &a, int b){ if(b op a) a = b; }
 
 #include <iostream>
 #include <vector>
